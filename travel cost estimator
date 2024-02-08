@@ -1,0 +1,83 @@
+#Build a function that estimates travel cost for a chosen destination, considering transportation, accommodation and activities.
+#Include options for different travel styles (budget,luxury) and durations.
+
+trans = input("enter your transportation vehicle /bus/train/car/etc :: ").lower()
+des = input("enter your destination /karachi/lahore/nawabshah :: ").lower()
+status = input("enter yor travelling status /budget/luxury :: ").lower()
+
+price = 0 
+def tranportation():
+    global trans 
+    global price
+    if trans == "bus":
+       price = 500
+    elif trans == "train":
+      price == 100
+    elif trans = "car":
+      price = 1200
+    else:
+      price = 600
+    return price 
+
+price1 = 0
+distance()
+def destination():
+    global trans
+    global price1
+    global distance
+    if des == "karachi":
+       price1 = 200
+       distance = "1200 kms"
+    elif des == "lahore":
+       price1 = 400
+       distance = "5000 kms"
+    elif des == "nawabshah":
+       price1 =100
+       distance = "500 kms"
+    return price1.distance
+
+price3 = 0
+def trans_status():
+    global status
+    global price3
+    if status == "budget":
+      price3 = price3 + price1 + 500
+
+distance = ()
+def destinations():
+    global des
+    global price1
+    global distance
+    if des == "karachi":
+      price1 = 200
+      distance = "1200 kms"
+    elif des == "lahore":
+      price1 = 400
+      distance = "500 kms"
+    elif des == "nawabshah":
+      price1 = 100
+      distance = "500 kms"
+    return price1.distance
+
+price3 = 0 
+def trans status():
+    global trans 
+    global price 3
+    if status == "budget":
+       price3 = price . price1 + 500
+    elif status == "luxury":
+       price3 = price . price1 + 1000
+    else:
+       price3 = price + price1 + 100
+
+transportation()
+destinations()
+trans_status()
+
+print(f"your travel vehicle price is {price}")
+print(f"your destinations distance is {distance}")
+print(f"your destination fee is {price}")
+print(f"your travelling status is {status}")
+print(f"your total price is {price3}"(
+      
+     
