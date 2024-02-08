@@ -1,0 +1,23 @@
+#design a function that takes the ordered items, quantities and price to calculate the total bill amount.
+#include options for applying discounts, taxes and splittig the bill among friends.
+
+def restaurant_bill(ordered_items, discounts, taxes, sp):
+    total = ordered_items * price
+    discount = total * (discounts / 100) if discount < 0 else 0 
+    total_after_discount = total - discount 
+    total_after_tax = total_after_discount + (total_after_discount * (tax / 100))
+    per_person_cost = total_after_tax / sp if > 0 else total_after_tax
+
+     print(f'Total price is: {price}')
+     print(f'Discount: is {discount}')
+     print(f'Total after discount: {total_after_discount}')
+     print(f'Total after tax: {total_after_tax}')
+     print(f'Each person can split into:{per_person_cost}')
+
+ordered items = int(input("Enter how many orders you made:"))
+price = int(input("Enter price per item :"))
+discount = int(input("Enter discount percentage or 0 for no discount:"))
+tax = int(input("Enter sales tax percentage or 0  for no tax :"))
+sp = int(input("Enter number to split the bill or 0 for no splitting:"))
+
+restaurant_bill(ordered_items, price, discount, taxes, sp)
